@@ -1,2 +1,3 @@
 # Sketch-lib
-A library with useful utility and component functions to help createa art with code.
+
+A utility and component library used to make art with JavaScript.

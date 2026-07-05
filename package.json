@@ -1,0 +1,25 @@
+{
+  "name": "sketch-liby",
+  "version": "0.0.1",
+  "description": "A utility and component libray used to make art with JavaScript.",
+  "keywords": [
+    "JavaScript",
+    "Art",
+    "Canvas"
+  ],
+  "homepage": "https://github.com/bkcastro/sketch-liby#readme",
+  "bugs": {
+    "url": "https://github.com/bkcastro/sketch-liby/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkcastro/sketch-liby.git"
+  },
+  "license": "ISC",
+  "author": "Brandon Castro",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  }
+}
