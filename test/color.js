@@ -1,6 +1,7 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert';        
-import { rgb, random, randomR } from '../utils/index.js';
+import { random, randomR } from '../utils/random.js';
+import { rgb } from '../utils/color.js'
 
 const RGB_REGEX = /^rgb\(\d+, \d+, \d+\)$/;
 
