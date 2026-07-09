@@ -14,14 +14,14 @@ const rgbaPrototype = {
         return randomR(255);
     },
     get a() {
-        return random();
+        return Math.round(random() * 100) / 100;
     },
 };
 
 /**
  * Return a random rgb color.
  *
- * @param {obj} args
+ * @param {object} args
  * @return {string}
  */
 export function rgb(args = {}) {
@@ -29,6 +29,19 @@ export function rgb(args = {}) {
     Object.setPrototypeOf(args, rgbaPrototype);
 
     return `rgb(${args.r}, ${args.g}, ${args.b})`;
+}
+
+/**
+ * Return a random rgba color.
+ *
+ * @param {object} args
+ * @return {string}
+ */
+export function rgba(args = {}) {
+
+    Object.setPrototypeOf(args, rgbaPrototype);
+
+    return `rgba(${args.r}, ${args.g}, ${args.b}, ${args.a})`;
 }
 
 /**
@@ -45,14 +58,14 @@ const hslaPrototype = {
         return randomR(100);
     },
     get a() {
-        return Math.round(Math.random/100)*100;
+        return Math.round(random() * 100) / 100;
     }
 }
 
 /**
  * Return a random hsl color.
  *
- * @param {obj} args
+ * @param {object} args
  * @return {string}
  */
 export function hsl(args = {}) {
@@ -60,6 +73,19 @@ export function hsl(args = {}) {
     Object.setPrototypeOf(args, hslaPrototype);
 
     return `hsl(${args.h}, ${args.s}%, ${args.l}%)`;
+}
+
+/**
+ * Return a random hsla color.
+ *
+ * @param {object} args
+ * @return {string}
+ */
+export function hsla(args = {}) {
+
+    Object.setPrototypeOf(args, hslaPrototype);
+
+    return `hsla(${args.h}, ${args.s}%, ${args.l}%, ${args.a})`;
 }
 
 /**
