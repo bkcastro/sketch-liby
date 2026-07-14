@@ -10,3 +10,6 @@
     + [ ] hsv.
     + [ ] hsva.
     + [ ] hex.
++ WebXR component function to view canvas sketches in XR.
++ Add pre-build environment to envision art works.
+    + [ ] Gallery. 
